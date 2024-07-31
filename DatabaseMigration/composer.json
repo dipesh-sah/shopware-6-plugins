@@ -1,0 +1,27 @@
+{
+    "name": "database-migration/database-migration",
+    "description": "database-migration/database-migration",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "DatabaseMigration\\DatabaseMigration",
+        "label": {
+            "de-DE": "DatabaseMigration",
+            "en-GB": "DatabaseMigration"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "DatabaseMigration\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DatabaseMigration\\Tests\\": "tests/"
+        }
+    }
+}
