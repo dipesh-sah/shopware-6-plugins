@@ -1,0 +1,27 @@
+{
+    "name": "listening-to-events/listening-to-events",
+    "description": "listening-to-events/listening-to-events",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "ListeningToEvents\\ListeningToEvents",
+        "label": {
+            "de-DE": "Listening To Events",
+            "en-GB": "Listening To Events"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "ListeningToEvents\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ListeningToEvents\\Tests\\": "tests/"
+        }
+    }
+}
