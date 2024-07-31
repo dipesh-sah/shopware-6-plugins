@@ -1,0 +1,6 @@
+label:
+  de-DE: 'Basic Example'
+  en-GB: 'Basic Example'
+  
+views:
+  - '@DependencyInjection/storefront'

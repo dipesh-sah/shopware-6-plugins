@@ -1,0 +1,27 @@
+{
+    "name": "dependency-injection/dependency-injection",
+    "description": "dependency-injection/dependency-injection",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "DependencyInjection\\DependencyInjection",
+        "label": {
+            "de-DE": "DependencyInjection",
+            "en-GB": "DependencyInjection"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "DependencyInjection\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DependencyInjection\\Tests\\": "tests/"
+        }
+    }
+}
