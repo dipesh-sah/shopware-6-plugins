@@ -1,0 +1,27 @@
+{
+    "name": "use-plugin-config/use-plugin-config",
+    "description": "use-plugin-config/use-plugin-config",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "UsePluginConfig\\UsePluginConfig",
+        "label": {
+            "de-DE": "Use Plugin Config",
+            "en-GB": "Use Plugin Config"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "UsePluginConfig\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "UsePluginConfig\\Tests\\": "tests/"
+        }
+    }
+}

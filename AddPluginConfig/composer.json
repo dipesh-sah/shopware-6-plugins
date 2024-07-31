@@ -1,0 +1,27 @@
+{
+    "name": "add-plugin-config/add-plugin-config",
+    "description": "add-plugin-config/add-plugin-config",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "AddPluginConfig\\AddPluginConfig",
+        "label": {
+            "de-DE": "Add Plugin Config",
+            "en-GB": "Add Plugin Config"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "AddPluginConfig\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AddPluginConfig\\Tests\\": "tests/"
+        }
+    }
+}

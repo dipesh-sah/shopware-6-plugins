@@ -1,0 +1,17 @@
+{% sw_extends '@Storefront/storefront/block/cms-block-product-heading.html.twig' %}
+
+{% block block_product_heading %}
+	{{ parent() }}
+
+	{% set email = config('UsePluginConfig.config.textField')%}
+	{% set selectedCategories = config('UsePluginConfig.config.category') %}
+
+	{% set activeId = page.header.navigation.active.id %}
+
+	{% if activeId is defined and selectedCategories is iterable and activeId in selectedCategories %}
+		<div class='message'>
+			{{email|raw}}
+		</div>
+	{% endif %}
+
+{% endblock %}
