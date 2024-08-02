@@ -1,0 +1,27 @@
+{
+    "name": "add-custom-n-p-m-dependencies/add-custom-n-p-m-dependencies",
+    "description": "add-custom-n-p-m-dependencies/add-custom-n-p-m-dependencies",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "AddCustomNPMDependencies\\AddCustomNPMDependencies",
+        "label": {
+            "de-DE": "Add Custom NPM Dependencies",
+            "en-GB": "Add Custom NPM Dependencies"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "AddCustomNPMDependencies\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AddCustomNPMDependencies\\Tests\\": "tests/"
+        }
+    }
+}
