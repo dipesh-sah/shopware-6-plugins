@@ -1,0 +1,27 @@
+{
+    "name": "custom-c-m-s/custom-c-m-s",
+    "description": "custom-c-m-s/custom-c-m-s",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "CustomCMS\\CustomCMS",
+        "label": {
+            "de-DE": "Add Custom CMS Block",
+            "en-GB": "Add Custom CMS Block"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "CustomCMS\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CustomCMS\\Tests\\": "tests/"
+        }
+    }
+}

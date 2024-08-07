@@ -1,0 +1,14 @@
+{% block sw_cms_block_custom_block %}
+    <div class="sw-cms-block-custom-block">
+        <div class="sw-cms-block-custom-block-left">
+            {% block sw_cms_block_custom_block_left %}
+                {{ cmsElement.left }}
+            {% endblock %}
+        </div>
+        <div class="sw-cms-block-custom-block-right">
+            {% block sw_cms_block_custom_block_right %}
+                {{ cmsElement.right }}
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}
