@@ -1,0 +1,14 @@
+.sw-cms-preview-image-textt{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    .row-datas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        img {
+            width: 100%;
+        }
+       
+    }
+}

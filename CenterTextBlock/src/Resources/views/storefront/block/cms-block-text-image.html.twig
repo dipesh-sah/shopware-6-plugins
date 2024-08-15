@@ -1,0 +1,62 @@
+{% block text_image %}
+	{% set image1 = block.slots.getSlot('image1') %}
+	{% set text1 = block.slots.getSlot('text1') %}
+
+	{% set image2 = block.slots.getSlot('image2') %}
+	{% set text2 = block.slots.getSlot('text2') %}
+
+	{% set image3 = block.slots.getSlot('image3') %}
+	{% set text3 = block.slots.getSlot('text3') %}
+
+	{% set image4 = block.slots.getSlot('image4') %}
+	{% set text4 = block.slots.getSlot('text4') %}
+
+	{% set image5 = block.slots.getSlot('image5') %}
+	{% set text5 = block.slots.getSlot('text5') %}
+
+	{% set image6 = block.slots.getSlot('image6') %}
+	{% set text6 = block.slots.getSlot('text6') %}
+
+	<div class="row">
+	<h2 class="text-center">The Custom Block</h2>
+		<div class="col-4 md-col-6">
+			{% sw_thumbnails 'cms-image-thumbnails' with {
+				media:image1.data.media
+			} %}
+			<div>{{ text1.config.content.value|raw }}</div>
+		</div>
+
+		<div class="col-4 md-col-6">{% sw_thumbnails 'cms-image-thumbnails' with {
+			media:image2.data.media
+		} %}
+		<div>{{ text2.config.content.value|raw }}</div></div>
+
+		<div class="col-4 md-col-6">
+			{% sw_thumbnails 'cms-image-thumbnails' with {
+				media:image3.data.media
+			} %}
+			<div>{{ text3.config.content.value|raw }}</div>
+		</div>
+
+		<div class="col-4 md-col-6">
+			{% sw_thumbnails 'cms-image-thumbnails' with {
+				media:image4.data.media
+			} %}
+			<div>{{ text4.config.content.value|raw }}</div>
+		</div>
+
+		<div class="col-4 md-col-6">
+			{% sw_thumbnails 'cms-image-thumbnails' with {
+				media:image5.data.media
+			} %}
+			<div>{{ text5.config.content.value|raw }}</div>
+		</div>
+
+		<div class="col-4 md-col-6">
+			{% sw_thumbnails 'cms-image-thumbnails' with {
+				media:image6.data.media
+			} %}
+			<div>{{ text6.config.content.value|raw }}</div>
+		</div>
+	</div>
+{% endblock %}
