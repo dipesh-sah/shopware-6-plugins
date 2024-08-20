@@ -1,10 +1,8 @@
 {% block sw_cms_six_image_with_title_text %}
-    <div class="text-center" >
-        <h2>Hello From Component</h2>
-        <sw-text-editor
-            :value="text"
-            
-        />
-        
-    </div>
+	<div>
+		<div class="text-center">
+			<sw-text-editor v-model:value="element.config.content.value" :disabled="disabled" :vertical-align="element.config.verticalAlign.value" :allow-inline-data-mapping="true" :is-inline-edit="true" sanitize-input sanitize-field-name="app_cms_block.template" enable-transparent-background @blur="onBlur" @update:value="onInput"/>
+		</div>
+
+	</div>
 {% endblock %}

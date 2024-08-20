@@ -1,0 +1,4 @@
+{% block text_preview_element %}
+    {{ element.config.content.value | raw }}
+    {{dump(element)}}
+{% endblock %}

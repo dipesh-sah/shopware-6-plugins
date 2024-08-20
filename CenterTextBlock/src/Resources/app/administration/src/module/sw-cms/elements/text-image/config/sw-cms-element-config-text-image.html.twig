@@ -1,0 +1,28 @@
+<sw-tabs position-identifier="content-name-age" :default-item="'content'">
+	<template #default="{ active }">
+		<sw-tabs-item :name="'content'" :title="name-tab" :active-tab="active">
+			Content
+		</sw-tabs-item>
+
+		<sw-tabs-item :name="'setting'" :title="age-tab" :active-tab="active">
+			Setting
+		</sw-tabs-item>
+	</template>
+
+	<template #content="{ active }">
+		<div v-if="active === 'content'">
+			<sw-container>
+					<sw-text-editor v-model:value="element.config.content.value"/>
+			</sw-container>
+		</div>
+		<div v-if="active === 'setting'">
+			<sw-select-field placeholder='Vertical Align' label="Vertical Align"
+			v-model:value="element.config.verticalAlign.value"
+			>
+				<option value="flex-start">Top</option>
+				<option value="center">Center</option>
+				<option value="flex-end">Bottom</option>
+			</sw-select-field>
+		</div>
+	</template> 	
+</sw-tabs>
